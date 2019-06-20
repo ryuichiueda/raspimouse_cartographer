@@ -10,7 +10,7 @@
 
   <node name="cartographer_node" pkg="cartographer_ros"
       type="cartographer_node" args="
-          -configuration_directory $(find raspimouse_catrographer)/config
+          -configuration_directory $(find raspimouse_cartographer)/config
           -configuration_basename backpack_2d.lua"
       output="screen">
     <remap from="echoes" to="horizontal_laser_2d" />
