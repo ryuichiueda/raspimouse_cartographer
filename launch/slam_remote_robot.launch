@@ -1,0 +1,15 @@
+<launch>
+  <node pkg="raspimouse_ros_2" name="motors" type="motors" required="true" />
+  <node pkg="raspimouse_catrographer" name="keyboard_cmd_vel" type="keyboard_cmd_vel.py" required="true" />
+
+  <node pkg="joy" name="joy_node" type="joy_node" required="true">
+    <param name="autorepeat_rate" value="3" />
+  </node>
+  <node pkg="raspimouse_game_controller" name="logicool_cmd_vel"
+        type="logicool_cmd_vel.py" required="true" output="screen" />
+
+  <node pkg="urg_node" name="urg_node" type="urg_node" required="true" >
+        <param name="frame_id" value="base_link"/>
+  </node>
+</launch>
+
