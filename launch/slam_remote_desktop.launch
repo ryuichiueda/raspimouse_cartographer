@@ -2,6 +2,8 @@
   <arg name="scan_topic" default="/scan" />
   <arg name="odom_topic" default="/odom" />
 
+  <node pkg="tf" type="static_transform_publisher" name="imu_link_connect" args="0 0 0 0 0 0 /imu_link /base_imu_link 100"/>
+
   <param name="robot_description"
     textfile="$(find cartographer_ros)/urdf/backpack_2d.urdf" />
 
