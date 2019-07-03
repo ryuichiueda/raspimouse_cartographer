@@ -34,7 +34,7 @@ TRAJECTORY_BUILDER_2D = {
     max_range = 50.,
   },
 
-  use_online_correlative_scan_matching = false,
+  use_online_correlative_scan_matching = true,
   real_time_correlative_scan_matcher = {
     linear_search_window = 0.1,
     angular_search_window = math.rad(20.),
