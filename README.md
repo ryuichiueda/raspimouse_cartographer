@@ -6,9 +6,19 @@ Configuration files for using [cartographer](http://wiki.ros.org/cartographer) w
 
 Please install required package. (I should list them here but not yet.)
 
+## launch
+
 ```
 $ roslaunch raspimouse_cartographer slam.launch
 ```
+
+## after finishing SLAM
+
+Please push the front button. When the left side LED goes dark, the following files are saved:
+
+* a map with the pgm format,
+* a trajectory record with the tsv format, and
+* a bag file with the protocol buffer format.
 
 # acknowledgements
 
