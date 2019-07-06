@@ -1,6 +1,6 @@
 <launch>
   <!-- ROBOT SIDE -->
-  <machine name="raspimouse" address="raspimouse" env-loader="/home/ubuntu/env.sh" user="ubuntu" password="ubuntu" />
+  <machine name="raspimouse" address="raspimouse" env-loader="/home/ubuntu/env.bash" user="ubuntu" password="ubuntu" />
 
   <node machine="raspimouse" pkg="raspimouse_ros_2" name="motors" type="motors" required="true" />
 
