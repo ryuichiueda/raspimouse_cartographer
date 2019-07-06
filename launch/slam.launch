@@ -3,6 +3,8 @@
   <machine name="raspimouse" address="raspimouse" env-loader="/home/ubuntu/env.bash" user="ubuntu" password="ubuntu" />
 
   <node machine="raspimouse" pkg="raspimouse_ros_2" name="motors" type="motors" required="true" />
+  <node machine="raspimouse" pkg="raspimouse_ros_2" name="buttons" type="buttons" required="true" />
+  <node machine="raspimouse" pkg="raspimouse_ros_2" name="leds" type="leds" required="true" />
 
   <node machine="raspimouse" pkg="joy" name="joy_node" type="joy_node" required="true">
     <param name="autorepeat_rate" value="3" />
@@ -39,5 +41,6 @@
   <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
       type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
 
+  <node name="trajectory_extractor" pkg="raspimouse_cartographer" type="trajectory_extractor"  output="screen" required="true" />
 </launch>
 
