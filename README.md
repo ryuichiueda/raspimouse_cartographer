@@ -20,6 +20,8 @@ Please push the front button. When the left side LED goes dark, the following fi
 * a trajectory record with the tsv format, and
 * a bag file with the protocol buffer format.
 
+After that, all of the nodes halt.
+
 # acknowledgements
 
 [Cartographer](http://wiki.ros.org/cartographer) is licensed under the Apache 2.0 license. 
