@@ -4,12 +4,10 @@ Configuration files for using [cartographer](http://wiki.ros.org/cartographer) w
 
 # how to use
 
+Please install required package. (I should list them here but not yet.)
+
 ```
-### robot side ###
-$ roslaunch raspimouse_cartographer slam_remote_robot.launch
-### PC side ###
-$ roslaunch raspimouse_cartographer slam_remote_desktop.launch
-$ rviz  <- do it on another terminal
+$ roslaunch raspimouse_cartographer slam.launch
 ```
 
 # acknowledgements
