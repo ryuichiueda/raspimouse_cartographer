@@ -4,13 +4,23 @@ Configuration files for using [cartographer](http://wiki.ros.org/cartographer) w
 
 # how to use
 
+Please install required package. (I should list them here but not yet.)
+
+## launch
+
 ```
-### robot side ###
-$ roslaunch raspimouse_cartographer slam_remote_robot.launch
-### PC side ###
-$ roslaunch raspimouse_cartographer slam_remote_desktop.launch
-$ rviz  <- do it on another terminal
+$ roslaunch raspimouse_cartographer slam.launch
 ```
+
+## after finishing SLAM
+
+Please push the front button. When the left side LED goes dark, the following files are saved:
+
+* a map with the pgm format,
+* a trajectory record with the tsv format, and
+* a bag file with the protocol buffer format.
+
+After that, all of the nodes halt.
 
 # acknowledgements
 
