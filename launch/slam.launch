@@ -28,7 +28,7 @@
 
   <node pkg="tf" type="static_transform_publisher" name="imu_link_connect" args="0 0 0 0 0 0 /imu_link /base_imu_link 100"/>
 
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mapping_pfoe)/config/config.rviz"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find raspimouse_cartographer)/config/config.rviz"/>
 
   <param name="robot_description"
     textfile="$(find cartographer_ros)/urdf/backpack_2d.urdf" />
