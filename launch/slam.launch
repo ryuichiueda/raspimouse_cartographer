@@ -2,7 +2,9 @@
   <!-- ROBOT SIDE -->
   <machine name="raspimouse" address="raspimouse" env-loader="/home/ubuntu/env.bash" user="ubuntu" password="ubuntu" />
 
+  <arg name="imu" default="1" />
   <node machine="raspimouse" pkg="raspimouse_ros_2" name="motors" type="motors" required="true" />
+
   <node machine="raspimouse" pkg="raspimouse_ros_2" name="buttons" type="buttons" required="true" />
   <node machine="raspimouse" pkg="raspimouse_ros_2" name="leds" type="leds" required="true" />
 
@@ -14,6 +16,10 @@
 
   <node machine="raspimouse" pkg="urg_node" name="urg_node" type="urg_node" required="true" >
         <param name="frame_id" value="base_link"/>
+  </node>
+
+  <node machine="raspimouse" pkg="rt_usb_9axis_sensor" name="rt_usb_9axis_sensor" type="rt_usb_9axis_sensor" required="true" output="screen">
+    <param name="port" value="/dev/ttyACM1"/>
   </node>
 
 <!-- PC SIDE -->

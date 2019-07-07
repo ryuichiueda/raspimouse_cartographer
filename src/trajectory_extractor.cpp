@@ -68,12 +68,12 @@ int main(int argc, char **argv)
 
 	cartographer_ros_msgs::WriteState::Request wsr;
 	cartographer_ros_msgs::WriteState::Response wsrs;
-	wsr.filename = "/tmp/tmp.bag.pbstream";
+	wsr.filename = "/tmp/cartographer.bag.pbstream";
 	//wsr.include_unfinished_submaps = true;
 	service::call("/write_state", wsr, wsrs);
 	ROS_INFO("%s", wsrs.status.message.c_str());
 
-	if(not system("rosrun map_server map_saver -f /tmp/tmp"))
+	if(not system("rosrun map_server map_saver -f /tmp/map"))
 		ROS_ERROR("CANNOT SAVE MAP");
 
 
