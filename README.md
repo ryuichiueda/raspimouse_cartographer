@@ -8,7 +8,7 @@ Please install required package. (I should list them here but not yet.)
 
 ## install
 
-1. Please install `raspimouse_ros_2` with the instruction of 
+Please run followings both on the robot and your PC.
 
 ```
 $ cd catkin_ws/src/    #the src directory of your catkin workspace
@@ -21,6 +21,8 @@ $ catkin_make
 ```
 
 ## launch
+
+Please edit `/etc/hosts` and host information on `launch/slam.launch` appropriately. Then, 
 
 ```
 $ roslaunch raspimouse_cartographer slam.launch
