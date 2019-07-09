@@ -4,8 +4,6 @@ Configuration files for using [cartographer](http://wiki.ros.org/cartographer) w
 
 # how to use
 
-Please install required package. (I should list them here but not yet.)
-
 ## install
 
 Please run followings both on the robot and your PC.
