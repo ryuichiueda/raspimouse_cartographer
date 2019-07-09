@@ -6,6 +6,16 @@ Configuration files for using [cartographer](http://wiki.ros.org/cartographer) w
 
 Please install required package. (I should list them here but not yet.)
 
+## install
+
+```
+$ cd catkin_ws/src/    #the src directory of your catkin workspace
+$ git clone https://github.com/ryuichiueda/raspimouse_ros_2.git
+$ git clone https://github.com/ryuichiueda/raspimouse_cartographer.git
+$ cd ~/catkin_ws/
+$ catkin_make
+```
+
 ## launch
 
 ```
