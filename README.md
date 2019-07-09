@@ -13,7 +13,7 @@ Please install required package. (I should list them here but not yet.)
 ```
 $ cd catkin_ws/src/    #the src directory of your catkin workspace
 $ git clone https://github.com/ryuichiueda/raspimouse_ros_2.git
-$ sudo rosdep install raspimouse_ros_2
+$ rosdep install raspimouse_ros_2
 $ git clone https://github.com/ryuichiueda/raspimouse_cartographer.git
 $ rosdep install --ignore-src raspimouse_ros_2 raspimouse_cartographer
 $ cd ~/catkin_ws/
