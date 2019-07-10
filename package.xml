@@ -30,6 +30,7 @@
   <run_depend>roscpp</run_depend>
   <run_depend>raspimouse_ros_2</run_depend>
   <run_depend>cartographer_ros</run_depend>
+  <run_depend>urg_node</run_depend>
 
   <buildtool_depend>catkin</buildtool_depend>
 
