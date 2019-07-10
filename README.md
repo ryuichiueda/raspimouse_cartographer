@@ -4,6 +4,13 @@ Configuration files for using [cartographer](http://wiki.ros.org/cartographer) w
 
 # how to use
 
+## needed equipment on Raspberry Pi Mouse
+
+* a 2D lidar
+    * URG-04LX-UG01
+* IMU
+    * RT-USB-9AXIS-00
+
 ## install
 
 Please run followings both on the robot and your PC.
@@ -12,6 +19,7 @@ Please run followings both on the robot and your PC.
 $ cd catkin_ws/src/    #the src directory of your catkin workspace
 $ git clone https://github.com/ryuichiueda/raspimouse_ros_2.git
 $ rosdep install raspimouse_ros_2
+$ git clone https://github.com/AtsushiSaito/rt_usb_9axis_sensor.git 
 $ git clone https://github.com/ryuichiueda/raspimouse_cartographer.git
 $ rosdep install --ignore-src raspimouse_ros_2 raspimouse_cartographer
 $ cd ~/catkin_ws/
